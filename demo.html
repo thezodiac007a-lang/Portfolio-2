@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Homepage</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+            },
+            fontFamily: {
+              "display": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#18181b] dark:text-gray-200">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<div class="flex flex-1 justify-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 py-5">
+<div class="flex flex-col w-full max-w-6xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-700 px-4 md:px-10 py-4">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] text-gray-900 dark:text-white">John Doe</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="#">Work</a>
+<a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="#">About</a>
+<a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="#">Resume</a>
+<a class="text-sm font-medium leading-normal text-gray-800 dark:text-gray-300 hover:text-primary dark:hover:text-primary" href="#">Contact</a>
+</div>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gray-200/80 dark:bg-gray-800/80 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-xl">
+                                    alternate_email
+                                </span>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gray-200/80 dark:bg-gray-800/80 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-xl">
+                                    code
+                                </span>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-gray-200/80 dark:bg-gray-800/80 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-xl">
+                                    palette
+                                </span>
+</button>
+</div>
+</header>
+<main class="flex-grow flex items-center py-16 sm:py-24">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+<div class="lg:col-span-3 flex flex-col gap-6 text-center lg:text-left">
+<div class="flex flex-col gap-4">
+<p class="text-primary font-bold text-lg">Hello, I'm</p>
+<h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tighter text-gray-900 dark:text-white">
+                                          John Doe.
+                                        </h1>
+<h2 class="text-2xl md:text-3xl font-semibold text-gray-600 dark:text-gray-400">
+                                          Product Designer &amp; UX Strategist.
+                                        </h2>
+<p class="mt-2 text-base md:text-lg text-gray-500 dark:text-gray-400 max-w-xl mx-auto lg:mx-0">
+                                          I specialize in creating intuitive, beautiful, and user-centric digital experiences. Passionate about solving complex problems through clean design and effective strategy.
+                                        </p>
+</div>
+<div class="flex flex-wrap gap-4 justify-center lg:justify-start pt-4">
+<button class="flex min-w-[150px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold leading-normal tracking-wide shadow-lg shadow-primary/30 hover:bg-primary/90 transition-colors">
+<span class="truncate">View My Work</span>
+</button>
+<button class="flex min-w-[150px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-gray-200/80 dark:bg-gray-800/80 text-gray-900 dark:text-white text-base font-bold leading-normal tracking-wide hover:bg-gray-300/80 dark:hover:bg-gray-700/80 transition-colors">
+<span class="truncate">Download Resume</span>
+</button>
+</div>
+</div>
+<div class="lg:col-span-2 flex justify-center lg:justify-end">
+<div class="w-72 h-72 md:w-96 md:h-96 rounded-full bg-center bg-no-repeat bg-cover shadow-2xl" data-alt="A professional headshot of John Doe, a product designer, smiling slightly against a neutral background." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCUMfRrG3_RpyG-k_39L1Jz99udcsXyAlmoZYsXmkcXL8nNrLWnOapBmsxWnSL1zW139JXXUwNCWsR_1pGVycZFic2F8zHdhW4FuXgSRkFrf-nYp7IdYFjLXBgh5jmsZuNtiY5BIyqndnJyKexqOVO7vBSvGug7qaPPW1iM4h9jtoyNk0JpbKbxgPapqqUZp6WjHNAVk7SKLj6GJLT8Kg-LO6eTQy0yYj81Bbkc8JEWixNwN_IgGMSj1959topa-I4tUZUdWGLMZ7-I");'></div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
